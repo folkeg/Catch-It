@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gamebackground"
+    android:orientation = "vertical"
+    tools:context=".GameMenu"
+    android:id="@+id/layout">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Game Mode"
+        android:id="@+id/btnstart"
+        android:textSize="25sp"
+        android:onClick="onStart"
+        android:clickable="true"
+        android:textColor="#FFFFFF"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="104dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Option"
+        android:id="@+id/btnOption"
+        android:textSize="25sp"
+        android:onClick="onOption"
+        android:clickable="true"
+        android:textColor="#FFFFFF"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="70dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Campiagn Mode"
+        android:id="@+id/btnCampaign"
+        android:textSize="25sp"
+        android:onClick="onCampaignMode"
+        android:clickable="true"
+        android:visibility="invisible"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="240dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Time Attack Mode"
+        android:id="@+id/btnTimeAttack"
+        android:textSize="25sp"
+        android:onClick="onTimeAttack"
+        android:clickable="true"
+        android:visibility="invisible"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="300dp"
+        android:layout_centerHorizontal="true"
+         />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Evade Mode"
+        android:id="@+id/btnEvadeMode"
+        android:textSize="25sp"
+        android:onClick="onEvadeMode"
+        android:clickable="true"
+        android:visibility="invisible"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="360dp"
+        android:layout_centerHorizontal="true"
+         />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:id="@+id/btnBack"
+        android:textSize="25sp"
+        android:onClick="onBack"
+        android:clickable="true"
+        android:visibility="invisible"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="420dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Catch it!"
+        android:id="@+id/btnTitle"
+        android:textSize="40sp"
+        android:onClick="onStart"
+        android:clickable="true"
+        android:textColor="#e67322"
+        android:layout_marginTop="30sp"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="35sp"
+        android:layout_height="35sp"
+        android:id="@+id/imageView"
+        android:src="@drawable/piranha2"
+        android:layout_alignBottom="@+id/btnTitle"
+        android:layout_toEndOf="@+id/btnTitle" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Motion Sensor Mode"
+        android:textSize="25sp"
+        android:id="@+id/motionSensorMode"
+        android:onClick="onCheck"
+        android:layout_centerInParent="true"
+        android:visibility="invisible"
+        android:textColor="#FFFFFF"
+        android:checked="true" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Classic Mode"
+        android:textSize="25sp"
+        android:id="@+id/classicMode"
+        android:onClick="onCheck"
+        android:layout_below="@+id/motionSensorMode"
+        android:layout_alignLeft="@+id/motionSensorMode"
+        android:visibility="invisible"
+        android:textColor="#FFFFFF"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Confirm"
+        android:id="@+id/btnConfirm"
+        android:textSize="25sp"
+        android:onClick="onConfirm"
+        android:clickable="true"
+        android:visibility="invisible"
+        android:textColor="#FFFFFF"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="140dp" />
+
+</RelativeLayout>
